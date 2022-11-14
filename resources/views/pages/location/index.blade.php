@@ -53,11 +53,14 @@
         </div>
     </nav>
 
-    <div class="card" style="width: 18rem;">
+    <div class="card">
+        <h5 class="card-header">Location</h5>
         <div class="card-body">
-            <h5 class="card-title">LOCATION</h5>
-            <p class="card-text">this is location list page</p>
-            <a href="#" class="btn btn-primary">PIN !</a>
+            <h5 class="card-title">this is list location</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="{{ route('location.create') }}" class="btn btn-primary">pin!</a>
+            <button type="button" class="btn btn-secondary">list</button>
+
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

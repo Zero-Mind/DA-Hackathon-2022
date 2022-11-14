@@ -22,7 +22,7 @@ class CreateLocationsTable extends Migration
             $table->float('totalScore');
             $table->string('categories');
             $table->string('latitude');
-            $table->string('longtitude');
+            $table->string('longitude');
             $table->string('state');
 
             $table->timestamps();
