@@ -5,8 +5,6 @@ if(navigator.geolocation){
         lat: localCoord.latitude,
         lng: localCoord.longitude
     }
-    })
-
     // Instantiate a map and platform object:
     let platform = new H.service.Platform({
         'apikey': window.hereApiKey
@@ -29,8 +27,9 @@ if(navigator.geolocation){
         window.addEventListener('resize', () => map.getViewPort().resize());
 
     let ui = H.ui.UI.createDefault(map, defaultLayers);
-    let mapEvents = new H.mapEvents.MapEvents(map);
-    let behavior = new H.mapEvents.behavior(mapEvents);
+    let mapEvents = new H.mapevents.MapEvents(map);
+    let behavior = new H.mapevents.behavior(mapEvents);
+    })
 
 }else{
     console.error("Geo location is not supported by this browser  ")
